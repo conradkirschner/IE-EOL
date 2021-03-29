@@ -1,0 +1,67 @@
+
+<style>
+    .ie-11-eol-overlay {
+        z-index: 2147483644; /* max value is: 2147483647*/
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center; /* for IE */
+        background: #f2f2f2;
+    }
+    .ie-11-eol-overlay-banner-link-to-browser {
+        width: 100%;
+        background: #18bfef;
+        font-size: 70px;
+        transition: none;
+    }
+    .ie-11-eol-overlay-banner-link-to-browser:hover {
+        color:green;
+    }
+    .ie-11-eol-overlay-headline {
+        font-size: 40px;
+    }
+    .ie-11-eol-more-information {
+        background: #f2f2f2;
+
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .ie-11-eol-overlay-legal-notes {
+        background: #f2f2f2;
+        position: absolute;
+        bottom: 0;
+    }
+    .ie-11-eol-overlay-inner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+</style>
+<div class="ie-11-eol-overlay">
+    <div class="ie-11-eol-overlay-inner">
+        <div id="ie-11-eol-overlay-main">
+            <div class="ie-11-eol-overlay-headline">Leider Microsoft hat die Unterstützung vom Internet Explorer eingestellt</div>
+            <div class="ie-11-eol-overlay-banner-text">
+                <div>Damit du weiterhin im Internet aktiv sein kannst, brauchst du bei uns nur auf weiter zu klicken</div>
+                <div><b>Es öffnet sich der neue Browser von Microsoft</b></div>
+                <div>Dein <span id="ie-11-eol-overlay-teamname">----</span> Team</div>
+            </div>
+            <a id="ie-11-eol-move-to-edge-link" href="microsoft-edge:https://yoursite.com">
+                <div class="ie-11-eol-overlay-banner-link-to-browser">Klicke hier um die Seite neuzuladen mit Mircosoft Edge</div>
+            </a>
+
+            <div class="ie-11-eol-more-information">
+                <a href="https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666">
+                    [Englisch] Weitere Informationen von Microsoft
+                </a>
+            </div>
+        </div>
+        <div class="ie-11-eol-overlay-legal-notes">
+            <a id="ie-11-eol-overlay-impress" href="">Impressum</a>
+            <a id="ie-11-eol-overlay-privacy" href="">Datenschutz</a>
+        </div>
+    </div>
+</div>
